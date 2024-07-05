@@ -1,0 +1,99 @@
+
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  z-index: 20;
+}
+Reset global body styles for specific div and its children
+.position-relative1 {
+  all: unset;
+  display: block; /* Resetting to block as 'all: unset' removes display property */
+}
+
+.position-relative1 * {
+  all: unset;
+  display: block; /* Resetting to block as 'all: unset' removes display property */
+}
+
+.position-relative1 {
+  position: relative;
+  padding: 1.25rem;
+  padding: 2.5rem;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  margin-top: 2.5rem;
+  border-radius: 0.5rem;
+  font-family: 'Playwrite', sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.heart2-container {
+  position: relative;
+  width: 100px;
+  height: 90px;
+  margin: 0 auto;
+}
+
+#heart { 
+  position: relative; 
+  width: 100px; 
+  height: 90px; 
+} 
+
+#heart:before, #heart:after { 
+  position: absolute; 
+  content: ""; 
+  left: 50px; 
+  top: 0; 
+  width: 50px; 
+  height: 80px; 
+  background: red; 
+  border-radius: 50px 50px 0 0; 
+  transform: rotate(-45deg); 
+  transform-origin: 0 100%; 
+} 
+
+#heart:after { 
+  left: 0; 
+  transform: rotate(45deg); 
+  transform-origin :100% 100%; 
+}
+
+
+
+
+#heart-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 90px;
+  background: linear-gradient(to top, black, #ff3247);
+  border-radius: 50%;
+  transition: width 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); /* Sea wave animation */
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #ff3247;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #e22b3f;
+}
+
+.result-section {
+  margin-top: 20px;
+}
